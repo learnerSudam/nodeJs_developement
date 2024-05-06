@@ -240,3 +240,23 @@ by doing this both our FE and BE uses same port .
 morgan is a package which is a logger for logging request data coming to the server.
 
 Load balancing is the process of distributing a set of tasks over a set of resources, with the aim of making of their overall processing more efficient
+
+Difference between 
+MongoDB and POSTGRES
+Shema: A schema defines the structure of the data that we store in database
+
+MongoDB:
+TUPE: DocumentDB: A document database (also known as a document-oriented database or a document store) is a database that stores information in documents. 
+ORGANIZED INTO:Collections: Data is stored in collections in JSON format, in key value pairs
+QUERY LANGUAGE: NOSQL: 
+SCALING: HORIZONTAL : when there is more load, load will be shared between processors
+SCHEMA: Flexible : Data coming in any schema format can be stored
+
+POSTGRES:
+TUPE: RELATIONAL: A relational database is a type of database that stores and provides access to data points that are related to one another 
+ORGANIZED INTO:Collections: Data is stored in tables
+QUERY LANGUAGE: SQL: 
+SCALING: VERTICAL : When there is more load, more no of processors will be required
+SCHEMA: RIGID : Knows the schema of the data before it comes
+
+Though Mongodb doesnt have any schema while reading and wrting data into the db, we can enforce schemas through API
